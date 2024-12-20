@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$couleurJaune: #fba419;
+
+.fondNoir {
+  background-color: rgba(0, 0, 0, 0.82);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  border: 3px solid $couleurJaune;
+}
+
+
+@mixin enSavoirPlus {
+  color: azure;
+  @include lato-bold();
+  padding: 0.3rem;
+  background-color: $couleurJaune;
+  display:inline-block;
+  border-radius: 1rem;
+  border: 3px solid azure;
+}
+
+/*      FONT       */
+
+$lato-font-path: "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap";
+
+@mixin lato-light {
+  .lato-light {
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+}
+
+@mixin lato-regular {
+  .lato-regular {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+@mixin lato-bold {
+  font-family: "Lato", serif;
+  font-weight: 700;
+  font-style: normal;
+} 
+
+@mixin lato-black {
+  font-family: "Lato", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/*      FONT       */
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+  ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    text-decoration: none;
+  }
+
+  body {
+    font-family: none;
+  }
+  
+
+  /*   Section Header   */
+
+  header {
+    background-image: url(../images/Banniere.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  nav {
+
+    .nav-link {
+    color: $couleurJaune;
+    @include lato-bold();
+
+    }
+
+    .nav-link:hover {
+      color: #d78400;
+    }
+
+    .navbar-nav {
+      align-items: center;
+      justify-content: end;
+    }
+
+    .iconSocial {
+      height: 2rem;
+      color: $couleurJaune;
+      border-radius: 1rem;
+      border: 3px solid $couleurJaune;
+    }
+  }
+
+  #navbarNav {
+    justify-content: end;
+    margin-left: 2rem;
+  }
+
+  header {
+    border-bottom: 2px solid $couleurJaune;
+
+    h1:not(span) {
+      color: azure;
+      @include lato-black();
+      font-size: 4rem;  
+    }
+
+    h1 span {
+      color: $couleurJaune;
+    }
+
+    p {
+      color: azure;
+      @include lato-light();
+      font-size: 1.5rem
+    }
+
+    .enSavoirPlus {
+    @include enSavoirPlus();
+    margin-bottom: 5rem;
+    }
+
+    .logoSoTatoo {
+      margin-top: 5rem;
+    }
+
+    }
+  
+
+  /*  Section A Propos     */
+
+  #aPropos {
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+      border-bottom: 2px solid $couleurJaune;  
+
+    h2 {
+      @include lato-black();
+      font-size: 3rem;
+      color: $couleurJaune;
+      }
+
+      span {
+        color: $couleurJaune;
+       }
+
+    p {
+      color: azure;
+      @include lato-light();
+      font-size: 1.5rem
+    }
+
+    .photoMartine {
+      border-radius: 1rem;
+      border: 3px solid $couleurJaune;
+    }
+
+    .hesitezPas {
+      color: $couleurJaune;
+      @include lato-black();
+      font-size: 2rem;
+    }
+
+    .portfolioLien {
+      @include enSavoirPlus();
+      margin-bottom: 3rem;
+    }
+  }
+
+  /*   section Services    */
+
+  #services {
+    background-image: url(../images/BanniereDeux.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid $couleurJaune;
+
+    h2 {
+      color: azure;
+      @include lato-black();
+      font-size: 3rem; 
+    }
+
+    h3 {
+      @include lato-black();
+      font-size: 3rem;
+      color: $couleurJaune;
+    }
+
+    h4 {
+      @include lato-light();
+      font-size: 2rem;
+      color: $couleurJaune;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: azure;
+      @include lato-light();
+      font-size: 1.5rem
+    }
+
+    .firstColonne {
+      height: 100vh;
+    }
+
+    .iconServices {
+      @include enSavoirPlus();
+      margin-right: 1rem;
+    }
+
+    .paraServices {
+      position: relative; top: 0%;
+
+    }
+  }
+  
+  @media screen and (max-width:768px ){
+    #services .iconServices {
+      margin-bottom: 1rem;
+    }
+    
+  }
+
+  /*      section contact     */
+
+  #contact { 
+    background-image: url(../images/fond.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid $couleurJaune;
+
+
+    .firstColonne {
+      background-image: url(../images/Salon.webp);
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 1.5rem;
+    }
+
+    h2 {
+      color:$couleurJaune;
+      @include lato-black();
+      font-size: 3rem; 
+    }
+
+    h3 {
+      @include lato-black();
+      font-size: 3rem;
+      color: $couleurJaune;
+    }
+
+    h4 {
+      color: $couleurJaune;
+    }
+
+    p:not(.paraContact) {
+      color: azure;
+      @include lato-light();
+      font-size: 1.5rem
+    }
+
+    .paraContact {
+      color: azure;
+      font-size: 2rem
+    }
+
+    p span {
+      color: $couleurJaune;
+    }
+
+    .iconSocial {
+      background-color: black;
+      width:3rem;
+      border-radius: 1rem;
+      border: 4px solid $couleurJaune;
+    }
+
+  }
+
+  /*    section galerie   */
+
+  #carouselExampleAutoplaying {
+    display: flex;
+    justify-content: center;
+  }
+
+  #galerie {
+    h2 {
+      color:$couleurJaune;
+      @include lato-black();
+      font-size: 3rem; 
+    }
+
+    .carousel-inner {
+      width: 40rem;
+      height: 40rem;
+      border-radius: 1rem;
+      border: 3px solid $couleurJaune;
+    }
+
+    p {
+      color: azure;
+      @include lato-light();
+      font-size: 1.5rem
+    }
+
+    .lien-conteneur-photo {
+      position: relative;
+
+      .photo-hover {
+        position: absolute;
+        top: 300px;
+        left: 236px;
+        color: $couleurJaune;
+        font-size: 2rem;
+        background-color: #00000098;
+        margin: 0.5rem;
+        border-radius: 1rem;
+        display: none;
+
+      }
+
+    }
+
+    .lien-conteneur-photo:hover .photo-hover {
+      display: flex;
+    }
+
+  }
+
+  /*      section Footer   */
+
+  footer {
+    .lienFooter {
+      color: $couleurJaune;
+      font-size: 1.5rem;
+    }
+  }
+
+  /*      backToScroll    */
+
+  #myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 10rem;
+    /* Place the button at the bottom of the page */
+    right: 3rem;
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: 0.2rem solid $couleurJaune;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.88);
+    outline: none;
+    /* Remove outline */
+    background-color: #000000;
+    /* Set a background color */
+    color: $couleurJaune;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+  
+  }
+
+  #mentionLegal {
+    h1 {
+      color:$couleurJaune;
+      @include lato-black();
+      font-size: 3rem;
+    }
+  }
+
+  
+

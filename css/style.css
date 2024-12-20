@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fondNoir {
+  background-color: rgba(0, 0, 0, 0.82);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  border: 3px solid #fba419;
+}
+
+/*      FONT       */
+/*      FONT       */
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+body {
+  font-family: none;
+}
+
+/*   Section Header   */
+header {
+  background-image: url(../images/Banniere.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav .nav-link {
+  color: #fba419;
+  font-family: "Lato", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+nav .nav-link:hover {
+  color: #d78400;
+}
+nav .navbar-nav {
+  align-items: center;
+  justify-content: end;
+}
+nav .iconSocial {
+  height: 2rem;
+  color: #fba419;
+  border-radius: 1rem;
+  border: 3px solid #fba419;
+}
+
+#navbarNav {
+  justify-content: end;
+  margin-left: 2rem;
+}
+
+header {
+  border-bottom: 2px solid #fba419;
+}
+header h1:not(span) {
+  color: azure;
+  font-family: "Lato", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 4rem;
+}
+header h1 span {
+  color: #fba419;
+}
+header p {
+  color: azure;
+  font-size: 1.5rem;
+}
+header p .lato-light {
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+header .enSavoirPlus {
+  color: azure;
+  font-family: "Lato", serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 0.3rem;
+  background-color: #fba419;
+  display: inline-block;
+  border-radius: 1rem;
+  border: 3px solid azure;
+  margin-bottom: 5rem;
+}
+header .logoSoTatoo {
+  margin-top: 5rem;
+}
+
+/*  Section A Propos     */
+#aPropos {
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 2px solid #fba419;
+}
+#aPropos h2 {
+  font-family: "Lato", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 3rem;
+  color: #fba419;
+}
+#aPropos span {
+  color: #fba419;
+}
+#aPropos p {
+  color: azure;
+  font-size: 1.5rem;
+}
+#aPropos p .lato-light {
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+#aPropos .photoMartine {
+  border-radius: 1rem;
+  border: 3px solid #fba419;
+}
+#aPropos .hesitezPas {
+  color: #fba419;
+  font-family: "Lato", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2rem;
+}
+#aPropos .portfolioLien {
+  color: azure;
+  font-family: "Lato", serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 0.3rem;
+  background-color: #fba419;
+  display: inline-block;
+  border-radius: 1rem;
+  border: 3px solid azure;
+  margin-bottom: 3rem;
+}
+
+/*   section Services    */
+#services {
+  background-image: url(../images/BanniereDeux.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 2px solid #fba419;
+}
+#services h2 {
+  color: azure;
+  font-family: "Lato", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 3rem;
+}
+#services h3 {
+  font-family: "Lato", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 3rem;
+  color: #fba419;
+}
+#services h4 {
+  font-size: 2rem;
+  color: #fba419;
+  margin-bottom: 1rem;
+}
+#services h4 .lato-light {
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+#services p {
+  color: azure;
+  font-size: 1.5rem;
+}
+#services p .lato-light {
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+#services .firstColonne {
+  height: 100vh;
+}
+#services .iconServices {
+  color: azure;
+  font-family: "Lato", serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 0.3rem;
+  background-color: #fba419;
+  display: inline-block;
+  border-radius: 1rem;
+  border: 3px solid azure;
+  margin-right: 1rem;
+}
+#services .paraServices {
+  position: relative;
+  top: 0%;
+}
+
+@media screen and (max-width: 768px) {
+  #services .iconServices {
+    margin-bottom: 1rem;
+  }
+}
+/*      section contact     */
+#contact {
+  background-image: url(../images/fond.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 2px solid #fba419;
+}
+#contact .firstColonne {
+  background-image: url(../images/Salon.webp);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1.5rem;
+}
+#contact h2 {
+  color: #fba419;
+  font-family: "Lato", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 3rem;
+}
+#contact h3 {
+  font-family: "Lato", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 3rem;
+  color: #fba419;
+}
+#contact h4 {
+  color: #fba419;
+}
+#contact p:not(.paraContact) {
+  color: azure;
+  font-size: 1.5rem;
+}
+#contact p:not(.paraContact) .lato-light {
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+#contact .paraContact {
+  color: azure;
+  font-size: 2rem;
+}
+#contact p span {
+  color: #fba419;
+}
+#contact .iconSocial {
+  background-color: black;
+  width: 3rem;
+  border-radius: 1rem;
+  border: 4px solid #fba419;
+}
+
+/*    section galerie   */
+#carouselExampleAutoplaying {
+  display: flex;
+  justify-content: center;
+}
+
+#galerie h2 {
+  color: #fba419;
+  font-family: "Lato", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 3rem;
+}
+#galerie .carousel-inner {
+  width: 40rem;
+  height: 40rem;
+  border-radius: 1rem;
+  border: 3px solid #fba419;
+}
+#galerie p {
+  color: azure;
+  font-size: 1.5rem;
+}
+#galerie p .lato-light {
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+#galerie .lien-conteneur-photo {
+  position: relative;
+}
+#galerie .lien-conteneur-photo .photo-hover {
+  position: absolute;
+  top: 300px;
+  left: 236px;
+  color: #fba419;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.5960784314);
+  margin: 0.5rem;
+  border-radius: 1rem;
+  display: none;
+}
+#galerie .lien-conteneur-photo:hover .photo-hover {
+  display: flex;
+}
+
+/*      section Footer   */
+footer .lienFooter {
+  color: #fba419;
+  font-size: 1.5rem;
+}
+
+/*      backToScroll    */
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 10rem;
+  /* Place the button at the bottom of the page */
+  right: 3rem;
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: 0.2rem solid #fba419;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.88);
+  outline: none;
+  /* Remove outline */
+  background-color: #000000;
+  /* Set a background color */
+  color: #fba419;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+}
+
+#mentionLegal h1 {
+  color: #fba419;
+  font-family: "Lato", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 3rem;
+}/*# sourceMappingURL=style.css.map */
